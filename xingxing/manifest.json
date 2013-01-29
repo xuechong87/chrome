@@ -1,0 +1,7 @@
+{
+"name": "xingxing_plugin",
+"version": "0.1",
+"description": "An addin for Xingxingjie.",
+"browser_action": {"default_icon": "images/icon.jpg"},
+"permissions": ["tabs"]
+}
