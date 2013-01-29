@@ -1,7 +1,29 @@
-{
-"name": "xingxing_plugin",
-"version": "0.1",
-"description": "An addin for Xingxingjie.",
-"browser_action": {"default_icon": "images/icon.jpg"},
-"permissions": ["tabs"]
+﻿{
+	"name": "xingxing_plugin",
+	"version": "0.1",
+	"description": "An addin for Xingxingjie.",
+	"browser_action": {"default_icon": "images/icon.jpg"},
+	"permissions": ["tabs"], 
+	"description": "a plugin for Xingxing , create key bordShortcut F2 F3 for switch current Tab",
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"commands": {
+		"tab-forward": {
+			"suggested_key": { "default": "Ctrl+2" },
+			"description": "tab-forward"
+		},
+		"tab-back": {
+			"suggested_key": { "default": "Ctrl+1" },
+			"description": "tab-back"
+		}
+		
+	},
+	"manifest_version": 2,
+	"icons":{
+		"16":"images/icon.jpg",
+		"48":"images/icon.jpg",
+		"128":"images/icon.jpg"
+	}
 }
